@@ -1,6 +1,7 @@
 # Menu
 starters:
 - salad
+- soup
 mains:
 - pasta
 desserts:
