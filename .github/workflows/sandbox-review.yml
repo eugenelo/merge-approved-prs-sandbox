@@ -1,0 +1,26 @@
+name: sandbox-review
+on:
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: Pull request number
+        required: true
+      event:
+        description: Review event
+        required: true
+        type: choice
+        options:
+          - approve
+          - request-changes
+permissions:
+  pull-requests: write
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Submit review
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ inputs.pr }}
+          EVENT: ${{ inputs.event }}
+        run: gh pr review "$PR" --repo "$GITHUB_REPOSITORY" "--$EVENT" --body "Sandbox review: $EVENT."
