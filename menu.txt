@@ -2,7 +2,10 @@
 starters:
 - salad
 - soup
+- olives
 mains:
 - pasta
+- risotto
 desserts:
 - cake
+- gelato
