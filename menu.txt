@@ -1,7 +1,9 @@
 # Menu
 starters:
 - bread
+- olives
 mains:
 - pasta
+- risotto
 desserts:
 - cake
