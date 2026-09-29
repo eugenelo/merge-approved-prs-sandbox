@@ -5,3 +5,4 @@ mains:
 - pasta
 desserts:
 - cake
+- sorbet
