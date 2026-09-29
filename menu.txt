@@ -6,3 +6,4 @@ mains:
 desserts:
 - cake
 - pie
+- tart
