@@ -1,6 +1,6 @@
 # Menu
 starters:
-- bread
+- salad
 - soup
 mains:
 - pasta
