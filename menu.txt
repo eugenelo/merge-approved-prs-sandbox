@@ -9,3 +9,5 @@ mains:
 desserts:
 - cake
 - gelato
+- pie
+- tart
