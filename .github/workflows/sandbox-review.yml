@@ -23,4 +23,5 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           PR: ${{ inputs.pr }}
           EVENT: ${{ inputs.event }}
-        run: gh pr review "$PR" --repo "$GITHUB_REPOSITORY" "--$EVENT" --body "Sandbox review: $EVENT."
+        run: |
+          gh pr review "$PR" --repo "$GITHUB_REPOSITORY" "--$EVENT" --body "Sandbox review: $EVENT."
